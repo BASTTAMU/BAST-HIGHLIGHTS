@@ -1,0 +1,22 @@
+ We integrated a nova hologram network modem into our robot.  
+ The Nova Hologram is a network modem that allows embedded systems and single board computers to connect to cellular networks for IoT development. After purchasing their product, a monthly subscription is required for keeping the Sim card active past 1 MB a month. 
+ Our integration with the Nova was used for our verbal Human Machine Interface and for navigation with our API. 
+ 
+ I originally found the product (The Nova) and later Shanley and I set up a meeting with them. They sent us four free SIM cards for use with the Nova. 
+ We later ordered the product and integrated it and got our subscription with them. 
+
+For our project we ended up using two methods. The first was being integrated directly into our keystone file. The second was typing the bash commands into terminal. The Python commands we used should already be there and more on website. 
+
+from Hologram.HologramCloud import HologramCloud
+
+hologram = HologramCloud(dict(), network='cellular')
+
+result = hologram.network.connect()
+
+
+The website for their Python SDK is: 
+https://www.hologram.io/references/python-sdk
+
+
+You should be able to find the bash commands and installation instructions here.  
+https://www.hologram.io/references/hologram-command-line-interface
